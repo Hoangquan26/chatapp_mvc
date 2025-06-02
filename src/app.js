@@ -26,7 +26,7 @@ app.use(passport.session())
 // initialize routers
 app.use(express.static('public'));
 
-
+require('./database/init.database');
 app.use('/', indexRouter);
 
 //catch error
